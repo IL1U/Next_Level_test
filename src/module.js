@@ -1,0 +1,1 @@
+console.log ('It\' text from module');
