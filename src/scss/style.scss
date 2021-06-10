@@ -50,7 +50,6 @@ header {
             font-size: 1.4em;
             line-height: 1.5em;
         };
-        
         .buttonAnswer {
             margin: 64px auto;
             max-width: 600px;
@@ -88,7 +87,22 @@ header {
                 color: #929292;
             };
         };
+        input[type="submit"] {
+            display: none;
+        };
     };
+};
+.buttonPhone {
+    position: absolute;
+    width: 100%;
+    top: 295px;
+    right: 3%;
+    .smartPassive {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40.5%;
+    }
 };
 
 @media screen and (max-width: 1262px) {
@@ -106,5 +120,16 @@ header {
     };
     form {
         margin: 0 10px;
+    };
+    .buttonPhone {
+        position: relative;
+        top: 0;
+        left: 0;
+        .smartPassive {
+            position: relative;
+            top: 0;
+            left: 3%;
+            width: 50%;
+      };
     };
 };
