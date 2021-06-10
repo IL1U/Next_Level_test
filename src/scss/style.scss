@@ -10,7 +10,7 @@ body {
 header {
     max-width: 1400px;
     min-height: 119px;
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
     clear: both;
     .logoText {
         float: left;
@@ -21,9 +21,9 @@ header {
             line-height: 1.1em;
             a {
                 text-decoration: none;
-                color: rgb(53,123,172);
+                color: #357bac;
                 span {
-                    color: rgb(109,166,202);
+                    color: #6da6ca;
                 };
             };
         };
@@ -43,11 +43,51 @@ header {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    p{
-        margin:0;
-        padding: 0 10px;
-        font-size: 1.4em;
-        line-height: 1.5em;
+    form {
+        max-width: 684px;
+        p{
+            margin-top: 40px;
+            font-size: 1.4em;
+            line-height: 1.5em;
+        };
+        
+        .buttonAnswer {
+            margin: 64px auto;
+            max-width: 600px;
+            height: 130px;
+            input {
+                display: none;
+            };
+            .buttonAnswer__img {
+                display:inline-block;
+                vertical-align: middle;
+                width: 22%;
+                img {
+                    width: 100%;
+                };
+            };
+            .buttonAnswer__text {
+                display:inline-block;
+                vertical-align: middle;
+                margin: 0 2%;
+                width: 72%;
+                height: 97px;
+                line-height: 97px;
+                text-align: center;
+                border-style: solid;
+                border-width: 3px 3px 3px 0px;
+                border-radius: 0px 15px 15px 0px;
+                font-size: 1.6em;
+            };
+            .buttonAnswer__text_Great {
+                border-color: #357bac;
+                color: #357bac;                    
+            };
+            .buttonAnswer__text_Bad {
+                border-color: #929292;
+                color: #929292;
+            };
+        };
     };
 };
 
@@ -63,5 +103,8 @@ header {
             float: none;
             margin: 0 auto;
         };
+    };
+    form {
+        margin: 0 10px;
     };
 };
