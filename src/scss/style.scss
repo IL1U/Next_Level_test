@@ -61,9 +61,13 @@ header {
                 display:inline-block;
                 vertical-align: middle;
                 width: 22%;
-                img {
-                    width: 100%;
-                };
+                height: 130px;
+            };
+            .buttonAnswer__img[name="Great"] {
+                background-image: url("../img/Great.png");
+            };
+            .buttonAnswer__img[name="Bad"] {
+                background-image: url("../img/Bad.png");
             };
             .buttonAnswer__text {
                 display:inline-block;
@@ -77,14 +81,18 @@ header {
                 border-width: 3px 3px 3px 0px;
                 border-radius: 0px 15px 15px 0px;
                 font-size: 1.6em;
-            };
-            .buttonAnswer__text_Great {
-                border-color: #357bac;
-                color: #357bac;                    
-            };
-            .buttonAnswer__text_Bad {
                 border-color: #929292;
                 color: #929292;
+            };
+            input[type="radio"]:checked ~.buttonAnswer__text {
+                border-color: #357bac;
+                color: #357bac;
+            };
+            input[type="radio"]:checked ~.buttonAnswer__img[name="Great"] {
+                background-image: url("../img/Great-checked.png");
+            };
+            input[type="radio"]:checked ~.buttonAnswer__img[name="Bad"] {
+                background-image: url("../img/Bad-checked.png");
             };
         };
         input[type="submit"] {
@@ -97,12 +105,21 @@ header {
     width: 100%;
     top: 295px;
     right: 3%;
+    .smartShadow {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+        width: 40.5%;
+    };
     .smartPassive {
         position: absolute;
         top: 0;
         right: 0;
         width: 40.5%;
-    }
+    };
+    .smartPassive:hover {
+        content: url(../img/smartActive.png);
+    };
 };
 
 @media screen and (max-width: 1262px) {
